@@ -47,3 +47,12 @@ const min = 10;
 const max = 20;
 const random = Math.floor(min + Math.random()* (max-min) + 1);
 console.log(random);
+
+
+// **************************** Summary ************************************
+
+// Number Methods : toString(), toFixed(), toPrecision(), toLocaleString()
+
+
+// Math Methods : abs(), random(), round(), ceil(), floor(), pow(), sqrt(), min(), max()
+
