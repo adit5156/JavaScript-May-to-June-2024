@@ -7,6 +7,9 @@ console.log(myArr);
 console.log(myArr[1]);
 console.log(myArr[5]);
 
+const myArr2 = new Array(3,6,9,12,15,18,21,24,27,30);
+console.log(myArr2);
+
 // Array Methods 
 
 myArr.push(25);
