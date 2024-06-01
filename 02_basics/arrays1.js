@@ -1,4 +1,6 @@
-// Arrays => shallow copy of an object is a copy whose properties share the same reference.
+// Arrays => stroing multiple items of different datatypes under a single variable name is called an array
+
+// Array is a type of shallow copy => shallow copy of an object is a copy whose properties share the same reference.
 
 const myArr = [6,12,18,24,30,36];
 console.log(myArr);
