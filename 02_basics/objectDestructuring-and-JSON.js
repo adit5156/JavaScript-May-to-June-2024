@@ -34,8 +34,10 @@ console.log(instructor);
 }
 */
 
+/*
 [
     {},
     {},
     {}
 ]
+*/
