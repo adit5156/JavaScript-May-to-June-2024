@@ -26,6 +26,8 @@ console.log(instructor);
 }
 */
 
+// Example of JSON
+
 /*
 {
     "name": "Aditya",
