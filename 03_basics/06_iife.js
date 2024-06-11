@@ -9,7 +9,7 @@
 
 // () Function Declaration () Function Execution / Function Call
 
-// ; is used after invoking a function so to break the flow of execution 
+// ; is used after invoking a function so to break the flow of execution of the program
 
 (function chai() {
     // Named IIFE
@@ -27,7 +27,7 @@
     console.log(`${name}, Welcome to the database!`);
 }) ("Aditya");
 
-(function unnamedIIFE() {
+(function namedIIFE() {
     // Named IIFE
     console.log("Welcome to Unnamed IIFE");
 }) ();
