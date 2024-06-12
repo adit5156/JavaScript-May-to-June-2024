@@ -3,14 +3,14 @@
 // ["", "", ""]
 // [{}, {}, {}]
 
-// For Of on Array
+// For of on Array
 // const arr = [1, 2, 3, 4, 5];
 // for(const iterator of arr) {
 //     console.log(iterator);
 // }
 
 
-// For Of on Strings
+// For of on Strings
 // const greetings = "Hello World!";
 // for(const iterator of greetings) {
 //     if(iterator === " ") {
