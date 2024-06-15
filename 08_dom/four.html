@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Part 4</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    const ul = document.querySelector('.language');
+
+    // Create Element
+    // Create Text Node
+
+    // function addLanguage(langName) {
+    //     const li = document.createElement('li');
+    //     li.innerHTML = `${langName}`;
+    //     ul.appendChild(li);
+    // }
+
+    // function addLanguage(langName) {
+    //     const li = document.createElement('li');
+    //     const liText = document.createTextNode(langName);
+    //     li.appendChild(liText);
+    //     ul.appendChild(li);
+    // }
+
+
+    function addLanguage(langName) {
+       const li = document.createElement('li');
+       li.appendChild(document.createTextNode(langName));
+       ul.appendChild(li);
+    }
+    
+    addLanguage('Python');
+    addLanguage('TypeScript');
+    addLanguage('Golang');
+    addLanguage('Ruby');
+    addLanguage('PHP');
+
+    // Edit 1 => replaceWith()
+    const secondLang = document.querySelector('li:nth-child(2)');
+    console.log(secondLang);
+    const newLi = document.createElement('li');
+    // newLi.innerText = 'C++';
+    newLi.appendChild(document.createTextNode('Rust'));
+    secondLang.replaceWith(newLi);
+
+    // Edit 2 => outerHTML = "value"
+    const firstLang = document.querySelector('li:nth-child(1)');
+    firstLang.outerHTML = '<li>Java</li>'
+
+    // Remove 
+    const lastLang = document.querySelector('li:nth-child(6)');
+    lastLang.remove();
+
+</script>
+</html>
