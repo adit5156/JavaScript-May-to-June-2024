@@ -5,30 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: #414141; color: white;">
     <h1>Chai aur Code</h1>
     <button id="stop">Stop</button>
 </body>
 <script>
-
-    // setTimeout(function(){
-    //     console.log("Hi, Aditya");
-    // }, 2000);
-
-    const sayAdi = function() {
-        console.log("Hi, Aditya");
-    }
-
     const changeText = function() {
         document.querySelector('h1').innerHTML = 'Best JS Course';
+        console.log("Text Changed");
     }
+    const timeoutId = setTimeout(changeText, 2000);
 
-
-    setTimeout(sayAdi, 2000);
-    const stopBtn = setTimeout(changeText, 3000);
-
-    document.querySelector('#stop').addEventListener('click', function(e) {
-        clearTimeout(stopBtn);
+    document.querySelector('#stop').addEventListener('click', function(e){
+        clearTimeout(timeoutId);
         console.log("STOPPED");
     });
 
