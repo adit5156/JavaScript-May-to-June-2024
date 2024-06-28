@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141; color: white;">
+    <h1>Chai aur JavaScript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+</body>
+<script>
+    const startFunc = function(myName) {
+        console.log(myName, Date.now());
+    }
+
+    document.querySelector('#start').addEventListener('click', function(e) {
+        const intervalId = setInterval(startFunc,3000,"Aditya");
+        console.log("Program Started")
+
+            document.querySelector('#stop').addEventListener('click', function(e) {
+                clearInterval(intervalId);
+                console.log("Program Ended");
+            });
+    });
+
+</script>
+</html>
