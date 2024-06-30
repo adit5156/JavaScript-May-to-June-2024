@@ -16,14 +16,19 @@
         console.log(myName, Date.now());
     }
 
-    document.querySelector('#start').addEventListener('click', function(e) {
-        const intervalId = setInterval(startFunc,3000,"Aditya");
-        console.log("Program Started")
+    let intervalId;
 
-            document.querySelector('#stop').addEventListener('click', function(e) {
-                clearInterval(intervalId);
-                console.log("Program Ended");
-            });
+    document.querySelector('#start').addEventListener('click', function(e) {
+        if(!intervalId) {
+            intervalId = setInterval(startFunc,3000,"Aditya");
+            console.log("Program Started");
+        }
+    });
+
+    document.querySelector('#stop').addEventListener('click', function(e) {
+        clearInterval(intervalId);
+        console.log("Program Ended");
+        intervalId = null;
     });
 
 </script>
