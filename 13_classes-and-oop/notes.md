@@ -4,8 +4,7 @@
 
 ## Object
 
-- collection of properties and methods
-- collection of key value pairs
+- collection of key value properties and methods
 - toLowerCase
 
 ## Why to use OOP
